@@ -11,10 +11,11 @@ class Task(models.Model):
     title = models.CharField(max_length=25)
     description = models.TextField(blank=True)
     status = models.CharField(max_length=5,choices=STATUS_CHOICES,default="todo")
+    duration_time = models.DurationField(null= True, blank = True)
     created_at = models.DateTimeField(auto_now_add=True)
     deadline = models.DateField(null= True, blank=True)
     completed_at = models.DateField(null= True, blank=True)
 
     def __str__(self):
-                return f"{self.title}, {self.description}"     
+                return f"{self.title}, {self.description}, {self.status}, {self.duration_time}"     
 
