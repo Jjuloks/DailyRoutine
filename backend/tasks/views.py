@@ -6,6 +6,7 @@ from datetime import date, datetime,  timedelta
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.decorators import action
+from django_filters.rest_framework import DjangoFilterBackend
 
 
 
@@ -30,7 +31,19 @@ class TaskViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
-    
+
+    def get_queryset(self):
+        queryset = Task.objects.all()
+        fromDate = self.request.query_params.get("from")
+        toDate = self.request.query_params.get("to")
+        deadline__range = [fromDate, toDate]
+
+        if fromDate is not None and toDate is not None:
+            queryset = queryset.filter(deadline__range=[fromDate, toDate])
+
+        return queryset
+
+
 
 
 
