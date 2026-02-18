@@ -7,6 +7,7 @@ import StatsPage from "./pages/StatsPage.jsx"
 import TodayPage from "./pages/TodayPage.jsx"
 import NavBar from "./comp/Navbar.jsx";
 import ContactPage from "./pages/ContactPage.jsx"
+import Footer from "./comp/Footer.jsx"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
     <NavBar/>
+    <div className="app-content"> 
     <Routes>
       <Route path='/' element={<AddTaskPage />} />
       <Route path='/today' element={<TodayPage />} />
@@ -21,6 +23,8 @@ function App() {
       <Route path='/stats' element={<StatsPage />} />
       <Route path='/contact' element={<ContactPage />} />
     </Routes>
+    </div>
+    <Footer/>
     </>
   )
 }

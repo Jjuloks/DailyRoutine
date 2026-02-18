@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodayPage = () => {
     return (
-        <div>
+         <div className="page-containter">
              Today
         </div>
     );

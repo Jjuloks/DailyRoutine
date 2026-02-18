@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
     return (
-        <div>
+        <div className="page-containter">
              Stats
         </div>
     );

@@ -2,8 +2,8 @@ import React from 'react';
 
 const AddTaskPage = () => {
     return (
-        <div>
-             Dodaj zadanie
+       <div className="page-containter">
+             Add Task
         </div>
     );
 }
