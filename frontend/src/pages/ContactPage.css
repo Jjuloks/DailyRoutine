@@ -1,45 +1,43 @@
 .contact-title {
-  text-align: center;
-  padding-bottom: 40px;
-  font-size: 35px;
-  color: #111827;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 35px;
+    color: #1f2937;
 }
 
 
 .contact-layout {
-  display: flex;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  align-items: stretch;
+    display: flex;
+     gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
 }
 
 
 /*Left-Side (PersonalInfo(BrandName, Name,PhoneNumber etc.) */
 .contact-info {
-  flex: 1;
-  position: relative;
-  background:
-    linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
-    url("./src/assets/chasingIt.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
+    flex: 1;
+    position: relative;
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),url("./src/assets/chasingIt.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
 }
 
 
 
 .my-info {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 70px 50px;
-  padding-left: 70px;
-  text-align: center;
-  color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 50px;
+    padding-left: 70px;
+    text-align: center;
+    color: white;
 }
 
 /*TOP 
@@ -90,11 +88,11 @@
 (TEXT)
 */
 .info-bottom {
-  margin-top: 10px;
-  max-width: 340px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    max-width: 340px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -103,38 +101,83 @@
 }
 
 .icon {
-  font-size: 20px;
-  color: #06b6d4;
-  margin-top: 2px;
-  flex-shrink: 0;
+    font-size: 20px;
+    color: #06b6d4;
+    margin-top: 2px;
+    flex-shrink: 0;
 }
 
 
 .my-info a {
-  color: #06b6d4;
-  text-decoration: none;
+    color: #06b6d4;
+    text-decoration: none;
 }
 
 .my-info a:hover {
-  color: #0891b2;
+    color: #0891b2;
 }
 
 
 
 
 
+/*Right-Side (Contact Form) */
 .contact-form-card {
-  flex: 1;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    flex: 1;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    color: #1f2937;
 }
 
+.contact-form-card h2 {
+    margin-bottom: 25px;
+    color: #1f2937;
+    text-align: center;
+}
 
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    transition: 0.2s ease;
+    color: #1f2937;
+}
+
+#messageArea {
+    resize: none;
+}
+.input:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+}
+
+.btn-sendMessage {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    background: #06b6d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.btn-sendMessage:hover {
+    background: #0891b2;
+}
 
 @media (max-width: 900px) {
   .contact-layout {
-    flex-direction: column;
+        flex-direction: column;
   }
 }

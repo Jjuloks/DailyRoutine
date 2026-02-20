@@ -65,10 +65,10 @@ const ContactPage = () => {
 
             <div className="form-group">
               <label>Message</label>
-              <textarea rows="5" className="input" />
+              <textarea rows="5" className="input" id="messageArea" />
             </div>
 
-            <button type="submit" className="btn-primary">
+            <button type="submit" className="btn-sendMessage">
               Send Message
             </button>
           </form>
