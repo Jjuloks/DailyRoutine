@@ -1,0 +1,22 @@
+
+
+.contact-info {
+  flex: 1;
+  position: relative;
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+    url("./src/assets/chasingIt.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media (max-width: 900px) {
+  .contact-layout {
+    flex-direction: column;
+  }
+}
